@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#151515">
+  <meta name="description" content="xclaqz — full stack Lua / Luau developer. Anticheat, custom movement, and complete Roblox game systems. Available for commissions.">
+  <meta property="og:title" content="xclaqz — systems that play different.">
+  <meta property="og:description" content="Lua / Luau development. Anticheat, movement, and complete Roblox game systems.">
+  <meta property="og:type" content="website">
+  <title>xclaqz — lua / luau developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151515'/%3E%3Cpath d='M18 17L46 47M46 17L18 47' stroke='%23eee' stroke-width='7'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">skip to content</a>
+  <div id="intro" class="intro" aria-hidden="true"><span class="intro-mark">x<span>_</span></span><span class="mono">initializing portfolio</span><div class="intro-track"></div></div>
+  <div id="pointer-glow" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="header">
+      <a class="brand" href="#" aria-label="xclaqz home"><img src="assets/pfp.png" alt="" width="36" height="36"><span>xclaqz<span class="brand-period">.</span></span></a>
+      <nav aria-label="main navigation"><a href="#work">work</a><a href="#about">about</a><a href="#contact">contact <span aria-hidden="true">↗</span></a></nav>
+      <a class="availability mono" href="#contact"><span class="status-dot"></span> open for commissions</a>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <div class="eyebrow mono"><span class="tiny-line"></span> full stack lua / luau developer</div>
+          <h1 id="hero-heading">systems that<br>play <span>different.</span></h1>
+          <p>I build the logic behind the experience.<br>Anticheat, movement, and complete game systems.<br>Built with intention. Tuned for Roblox.</p>
+          <div class="hero-actions"><a class="button light" href="#work">explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="#contact">let’s build something <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-stats"><div><strong>08<span>years</span></strong><p>writing lua</p></div><div><strong>09<span>years</span></strong><p>on roblox</p></div><div><strong>∞<span>possibilities</span></strong><p>one idea to start</p></div></div>
+        </div>
+        <div class="hero-visual">
+          <span class="visual-corner mono">[ creator / developer ]</span>
+          <img class="hero-image" src="assets/pfp.png" alt="xclaqz’s monochrome X emblem over a stormy landscape" width="1254" height="1254" fetchpriority="high">
+          <div class="hero-terminal">
+            <div class="window-title"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="mono">FlyA.luau</span><span class="file-type">lua</span></div>
+            <pre class="hero-code"><code id="hero-code">local groundPosition = lastGroundPosition[userId]
+
+character:PivotTo(CFrame.new(groundPosition))
+currentPosition = groundPosition</code><span class="caret" aria-hidden="true"></span></pre>
+            <div class="terminal-footer mono"><span><span class="status-dot"></span> built around the details</span><span>anticheatplace.rbxl</span></div>
+          </div>
+        </div>
+      </section>
+      <div class="stack-strip mono" aria-label="core technologies"><span>the toolkit</span><span>lua</span><span>luau</span><span>roblox studio</span><span>c++</span><span>github</span><span>optimization</span></div>
+      <section id="work" class="section work-section">
+        <div class="section-head reveal"><div><div class="eyebrow mono">01 / selected work</div><h2>less talk. <span>more code.</span></h2></div><p>A look inside the systems.<br>Real source. A little experimentation.</p></div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="code-preview"><div class="window-title"><span class="file-square">◇</span><span class="mono">SpeedA.luau</span><span class="code-tag mono">server</span></div><pre><code data-type="anticheat"></code></pre><div class="preview-meta mono"><span>01 — movement validation</span><span>source excerpt</span></div></div>
+            <div class="project-body"><div class="project-title"><h3>anticheat system</h3><span class="mono">.rbxl</span></div><p>Server-side movement checks with modular speed and fly detection. Tracks the last grounded position and rolls back movement that exceeds a check’s limits.</p><div class="tags mono"><span>luau</span><span>server validation</span><span>rollback</span></div><button class="project-open" data-project="anticheat">explore the system <span aria-hidden="true">↗</span></button></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="code-preview"><div class="window-title"><span class="file-square">◇</span><span class="mono">MovementController.luau</span><span class="code-tag mono">client</span></div><pre><code data-type="movement"></code></pre><div class="preview-meta mono"><span>02 — custom character physics</span><span>source excerpt</span></div></div>
+            <div class="project-body"><div class="project-title"><h3>movement system</h3><span class="mono">.rbxl</span></div><p>A custom character controller with camera-relative movement, blockcast collision, wall sliding, and step handling. Adjustable gravity and jump speed keep the feel in your hands.</p><div class="tags mono"><span>luau</span><span>custom physics</span><span>blockcasting</span></div><button class="project-open" data-project="movement">explore the system <span aria-hidden="true">↗</span></button></div>
+          </article>
+        </div>
+      </section>
+      <section class="section experience-section" aria-labelledby="experience-heading">
+        <div class="section-head reveal"><div><div class="eyebrow mono">02 / project experience</div><h2 id="experience-heading">part of <span>something bigger.</span></h2></div><p>From complete games<br>to work on established projects.</p></div>
+        <div class="experience-list" id="game-list"></div>
+        <p class="source-note">Game-wide statistics from the Roblox API, checked September 17, 2026. These are the games’ totals, not personal performance metrics. Experience listed by xclaqz. Booga Booga refers to the Gang O’ Fries Entertainment edition.</p>
+      </section>
+      <section id="about" class="section about-section">
+        <div class="about-copy reveal"><div class="eyebrow mono">03 / behind the systems</div><h2>curious by nature.<br><span>developer by choice.</span></h2><p>I’ve spent eight years writing Lua and nine years on Roblox. I like getting into the details: how a character moves, where a system can be exploited, and what makes gameplay feel right.</p><p>My focus is anticheat and full Roblox scripting systems, with a particular interest in movement and combat. I work across client and server, from individual mechanics to complete game logic.</p><div class="about-foot mono"><span>18 · ’08</span><span>intermediate–advanced</span></div></div>
+        <div class="skills-panel reveal"><div class="eyebrow mono">what i bring to the project</div><div class="service"><span class="service-icon">⌁</span><div><h3>gameplay systems</h3><p>Movement, combat mechanics, and full game scripting.</p></div></div><div class="service"><span class="service-icon">⌘</span><div><h3>anticheat & validation</h3><p>Server-side checks and movement correction.</p></div></div><div class="service"><span class="service-icon">↗</span><div><h3>debugging & optimization</h3><p>Find the bottleneck. Fix the logic. Keep it maintainable.</p></div></div><div class="skill-tags mono"><span>lua</span><span>luau</span><span>roblox studio</span><span>c++</span><span>github</span><span>visual studio</span><span>vs code</span><span>optimization</span></div></div>
+      </section>
+      <section id="contact" class="section contact-section">
+        <div class="contact-copy reveal"><div class="eyebrow mono"><span class="status-dot"></span> open for commissions</div><h2>got an idea?<br><span>let’s make it work.</span></h2><p>A new system, a stubborn bug, or a whole game.<br>Tell me what you’re building.</p><button id="copy-discord" class="contact-line"><span><span class="mono contact-label">discord</span><strong>xclaqz</strong></span><span class="copy-label">copy ↗</span></button><a class="contact-line" href="mailto:samuelljenkins01@gmail.com"><span><span class="mono contact-label">email</span><strong>samuelljenkins01@gmail.com</strong></span><span aria-hidden="true">↗</span></a><a class="profile-link mono" href="https://www.roblox.com/users/8257766952/profile" target="_blank" rel="noopener noreferrer">find me on roblox <span aria-hidden="true">↗</span></a></div>
+        <form class="contact-form reveal" action="https://formsubmit.co/samuelljenkins01@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New project inquiry — xclaqz portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-row"><label>your name<input name="name" autocomplete="name" required maxlength="100" placeholder="what should i call you?"></label><label>your email<input name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com"></label></div>
+          <label>what are we building?<select name="service"><option>roblox scripting / full game</option><option>anticheat system</option><option>movement or combat system</option><option>bug fixing / optimization</option><option>something else</option></select></label>
+          <label>project details<textarea name="message" required minlength="20" maxlength="5000" rows="5" placeholder="the idea, what you need, your timeline, and budget if you have one…"></textarea></label>
+          <button class="button light" type="submit">send project inquiry <span aria-hidden="true">↗</span></button>
+          <p class="form-note">Sent to my email through <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noopener noreferrer">FormSubmit</a>. You’ll continue to their verification page. Prefer Discord? Copy my username above.</p>
+          <p id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+    <footer><span class="mono">© <span id="year">2026</span> xclaqz</span><span>built with the same care as the code.</span><a href="#" class="mono">back to top ↑</a></footer>
+  </div>
+  <div id="toast" role="status"></div>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-head"><span class="eyebrow mono">inside the system</span><button id="dialog-close" aria-label="close project preview">×</button></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="dialog-tabs" role="tablist" aria-label="project preview"><button id="code-tab" role="tab" aria-selected="true" aria-controls="code-panel">source code</button><button id="demo-tab" role="tab" aria-selected="false" aria-controls="demo-panel" tabindex="-1">interactive preview</button></div><div id="code-panel" role="tabpanel" aria-labelledby="code-tab"><div class="dialog-code-top mono"><span id="dialog-filename"></span><button id="replay-code">replay typing ↻</button></div><pre class="dialog-code"><code id="dialog-code"></code></pre><p class="source-note">Excerpt from the supplied Roblox place. This preview displays code; it does not execute Luau.</p></div><div id="demo-panel" role="tabpanel" aria-labelledby="demo-tab" hidden></div></dialog>
+</body>
+</html>
